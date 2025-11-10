@@ -257,8 +257,9 @@ audio::-webkit-media-controls-panel {
   .btnbtn-info-love,
   .buttonyy {
     width: 40%;
+    height:40px
     font-size: 1rem;
-    padding: 12px;
+    padding: 4px;
   }
 
   .embed-containerrr iframe,
@@ -280,4 +281,5 @@ audio::-webkit-media-controls-panel {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
 
