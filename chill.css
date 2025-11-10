@@ -1,0 +1,223 @@
+/* 🌆 Background Section */
+.ChillTheme {
+  background-image: url("chillchill.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 40px 0;
+  backdrop-filter: brightness(0.8) blur(3px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 🌈 Player Card */
+.player-card {
+  max-width: 500px;
+  width: 60%;
+  background-color: rgb(2, 2, 20);
+  backdrop-filter: blur(10px);
+  border: 3px solid rgb(175, 45, 99);
+  border-radius: 20px;
+  box-shadow: 0 0 30px goldenrod;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🖋 Typography */
+.textyyy {
+  font-family: cursive;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #cc0256;
+  text-shadow: 0 0 5px rgb(247, 247, 247);
+}
+
+.headingggg {
+  font-family: cursive;
+  color: rgb(8, 114, 212);
+  text-shadow: 0 0 10px rgb(185, 11, 238);
+  font-weight: 700;
+}
+
+/* 🎬 YouTube */
+.videogrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.video-wrap iframe {
+  width: 80%;
+  max-width: 400px;
+  height: 140px;
+  border-radius: 12px;
+  border: 2px solid rgb(160, 1, 165);
+  box-shadow: 0 0 25px rgba(0, 213, 228, 0.993);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 5px;
+}
+
+.video-wrap iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 213, 228, 0.993);
+}
+
+/* 🎵 Spotify & SoundCloud */
+.sectionsection {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #35ce0f;
+  font-family: cursive;
+  text-shadow: 0 0 40px rgb(255, 255, 254);
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.embed-container,
+.embed-containerrr {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.embed-container iframe {
+  width: 90%;
+  border-radius: 15px;
+  height: 80px;
+  border: none;
+  box-shadow: 0 0 10px rgb(97, 206, 129);
+  transition: transform 0.3s ease;
+}
+
+.embed-container iframe:hover {
+  transform: scale(1.02);
+}
+
+.embed-containerrr iframe {
+  width: 80%;
+  border-radius: 15px;
+  border: 1px solid orange;
+  height: 140px;
+  box-shadow: 0 0 15px rgb(233, 140, 1);
+  transition: transform 0.3s ease;
+  margin: 5px;
+}
+
+.embed-containerrr iframe:hover {
+  transform: scale(1.02);
+}
+
+/* 🎧 Local Audio */
+.lonelyy {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  color: #eee;
+  border: 2px solid #9300a0;
+  box-shadow: 0 0 20px #f3cf01;
+  background-image: url("chill.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.lonelyy:hover {
+  transform: scale(1.02);
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-family: cursive;
+  font-weight: 700;
+  color: #b30631;
+  text-shadow: 0 0 39px rgb(121, 1, 145);
+}
+
+/* 🔘 Buttons */
+.btnbtn-info-love {
+  background: linear-gradient(145deg, rgb(136, 1, 170), rgb(255, 254, 254));
+  color: #41005f;
+  border: 3px solid rgb(114, 0, 129);
+  border-radius: 15px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 20px rgb(229, 181, 248);
+}
+
+.btnbtn-info-love:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgb(229, 181, 248);
+}
+
+.buttonyy {
+  background: linear-gradient(145deg, rgb(136, 1, 170), rgb(255, 254, 254));
+  border: 3px solid rgb(114, 0, 129);
+  box-shadow: 0 0 15px #d781f1;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  color: #41005f;
+  font-weight: 600;
+  font-family: cursive;
+  transition: all 0.3s ease;
+}
+
+.buttonyy:hover {
+  transform: translateY(-3px);
+    box-shadow: 0 0 25px rgb(229, 181, 248);
+}
+
+/* 🎚 Audio Player */
+audio {
+  border-radius: 10px;
+  background: rgb(161, 79, 79);
+  border-radius: 50px;
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .player-card {
+    width: 90%;
+  }
+  .textyyy {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textyyy {
+    font-size: 1.6rem;
+  }
+  .embed-containerrr iframe,
+  .embed-container iframe {
+    width: 100%;
+  }
+}
+
+/* 🔊 Sound Heading */
+.soundyheading {
+  color: rgb(209, 65, 8);
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-shadow: 0 0 20px #f3cf01;
+}

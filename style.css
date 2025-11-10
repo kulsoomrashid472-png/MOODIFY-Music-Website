@@ -1,0 +1,88 @@
+/* =============================== */
+/* 🌆 GLOBAL RESET */
+/* =============================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =============================== */
+/* 🌆 MAIN BACKGROUND CONTAINER */
+/* =============================== */
+.moodify-container {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    min-height: 100vh; /* better scaling on mobile */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem 0; /* prevent emojis from overflowing */
+}
+
+/* =============================== */
+/* 🌟 EMOJIS */
+/* =============================== */
+.mood-emoji {
+    position: absolute;
+    font-size: 4vw; /* responsive size */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+    outline: none; /* removes default blue focus outline */
+}
+
+/* Hover effect */
+.mood-emoji:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+/* Focus effect for accessibility */
+.mood-emoji:focus {
+    outline: none;
+    box-shadow: 0 0 12px #f5b60b; /* subtle glow */
+}
+
+/* =============================== */
+/* 🌟 EMOJI POSITIONS */
+/* =============================== */
+#emoji-happy { top: 5%; left: 50%; transform: translateX(-50%); }
+#emoji-sad { bottom: 5%; left: 50%; transform: translateX(-50%); }
+#emoji-chill { right: 15%; top: 50%; transform: translateY(-50%); }
+#emoji-love { left: 15%; top: 50%; transform: translateY(-50%); }
+
+/* =============================== */
+/* 🌟 RESPONSIVE ADJUSTMENTS */
+/* =============================== */
+@media (max-width: 1024px) {
+    .mood-emoji { font-size: 6vw; }
+    #emoji-happy { top: 12%; }
+    #emoji-sad { bottom: 12%; }
+    #emoji-love { left: 12%; }
+    #emoji-chill { right: 12%; }
+}
+
+@media (max-width: 768px) {
+    .mood-emoji { font-size: 8vw; }
+    #emoji-happy { top: 15%; }
+    #emoji-sad { bottom: 15%; }
+    #emoji-love { left: 10%; }
+    #emoji-chill { right: 10%; }
+}
+
+@media (max-width: 480px) {
+    .mood-emoji { font-size: 10vw; }
+    #emoji-happy { top: 18%; }
+    #emoji-sad { bottom: 18%; }
+    #emoji-love { left: 8%; }
+    #emoji-chill { right: 8%; }
+}
