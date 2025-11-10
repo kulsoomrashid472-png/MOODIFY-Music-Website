@@ -256,7 +256,7 @@ audio::-webkit-media-controls-panel {
 @media (max-width: 480px) {
   .btnbtn-info-love,
   .buttonyy {
-    width: 100%;
+    width: 40%;
     font-size: 1rem;
     padding: 12px;
   }
@@ -280,3 +280,4 @@ audio::-webkit-media-controls-panel {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
