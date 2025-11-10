@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melancholy Echoes</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="sad.css" />
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="sad-theme d-flex align-items-center justify-content-center min-vh-100">
+  <div class="player-card shadow-lg p-4 rounded-4">
+    <header class="text-center mb-4">
+      <h1 class="textyyy mb-2">Melancholy Echoes</h1>
+      <p class="textyy">
+        A collection of music for quiet nights and reflective moods.
+      </p>
+    </header>
+
+    <!-- 🎧 YouTube Section -->
+    <section class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+          class="bi bi-youtube text-danger me-2" viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.086a1.936 1.936 0 0 0 .86.208 4.22 4.22 0 0 0 1.98.053 4.25 4.25 0 0 0 2.253-.949 1.936 1.936 0 0 0 .265-.17 1.936 1.936 0 0 0 .098-.069v.001A1.936 1.936 0 0 0 15 2.5v11A1.936 1.936 0 0 0 13.064 14.5a1.936 1.936 0 0 0-.265.17 4.25 4.25 0 0 0-2.253.949 4.22 4.22 0 0 0-1.98-.053 1.936 1.936 0 0 0-.86-.208h-.086zM4.336 8V6.012L11.536 8 4.336 9.988z" />
+        </svg>
+        <h3 class="headingggg ">Emotional Beats</h3>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/Sw5JrUc-rFI" title="Sad Mood 1" allowfullscreen></iframe>
+        </div>
+          <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/t9dUiCYJpiw" title="Sad Mood 2" allowfullscreen></iframe>
+          </div>
+           <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/sVRwZEkXepg" title="Sad Mood 3" allowfullscreen></iframe>
+           </div>
+           <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/9sekgEXGm-E" title="Sad Mood 4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎶 Spotify Section -->
+    <section class="music-section mb-5">
+      <h2 class="sectionsection">Lost On Spotify</h2>
+      <p class="texttyy">Where feelings find their sound.</p>
+
+      <div class="embed-container">
+        <iframe src="https://open.spotify.com/embed/track/0cUdmruT6kjxa5KpteSdwc" loading="lazy"></iframe>
+        <iframe src="https://open.spotify.com/embed/track/6JB0h4leDJ4Akabtu42Epd" loading="lazy"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/4OUOgSWMoI38QBREbyOfJc" loading="lazy"></iframe>
+        <iframe src="https://open.spotify.com/embed/track/7292h5pidNaLfrse63T3dQ" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- ☁️ SoundCloud Section -->
+    <section class="music-section mb-5">
+      <h2 class="soundyheading">SoundCloud Sorrows</h2>
+      <p class="mutedtextt">Echoes of pain, wrapped in rhythem.</p>
+      <div class="embed-containerrr">
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/529800138"></iframe>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/174103089"></iframe>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244923478"></iframe>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213763231"></iframe>
+      </div>
+    </section>
+
+    <!-- 🎵 Local Audio Player -->
+    <section class="lonelyy bg-light p-3 rounded-3">
+      <div class="d-flex align-items-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+          class="bi bi-headphones text-secondary me-2" viewBox="0 0 16 16">
+          <path
+            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3h2V8a2 2 0 1 1 4 0v5h2v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+        </svg>
+        <div>
+          <h2 class="heading mb-0">Lonely Notes</h2>
+          <small id="track-title" class="text-muted">(Loading track...)</small>
+        </div>
+      </div>
+
+      <audio id="playlist-audio" controls class="w-100"></audio>
+
+      <div class="d-flex justify-content-center gap-2 mt-3">
+        <button class="btnbtn-info-love" onclick="prevTrack()">⏭ Previous </button>
+        <button class="btnbtn-info-love" onclick="nextTrack()">Next ⏭</button>
+      </div>
+
+      <div class="text-center mt-3">
+        <button class="buttonyy" onclick="window.location.href='index.html'">
+          ⬅ Back to Home
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script src="sad.js"></script>
+</body>
+</html>

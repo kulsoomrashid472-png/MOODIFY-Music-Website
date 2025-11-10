@@ -1,0 +1,233 @@
+/* =============================== */
+/* 🌆 Background Image Section */
+/* =============================== */
+.sad-theme {
+  background-image: url("sadimageee.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.8) blur(3px);
+  box-sizing: border-box;
+}
+
+/* ========== Player Card ========== */
+.player-card {
+  max-width: 500px;
+  width: 90%;
+  background-image: url(imggimgg.jpg);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(252, 206, 5);
+  border-radius: 20px;
+  box-shadow: 0 0px 30px rgb(248, 170, 0);
+  animation: fadeIn 1s ease-in;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgb(252, 206, 5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== Typography ========== */
+.textyyy {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5b60b;
+  text-shadow: 0 0 10px rgb(114, 0, 0);
+}
+
+.textyy {
+  font-size: 1rem;
+  color: #ffc401;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a74250;
+  text-shadow: 0 0 10px black;
+}
+.headingggg{ color: rgb(255, 17, 17); text-shadow: 0 0 10px rgb(177, 174, 167);
+ font-size: 2rem;
+  font-weight: 500;
+}
+.soundyheading{ color: rgb(255, 72, 0); text-shadow: 0 0 30px rgb(255, 230, 0);
+  font-size: 2rem;
+  font-weight: 500;
+} 
+.mutedtextt{ color: rgb(255, 174, 0); }
+
+/* ========== YouTube Grid ========== */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  border: 2px solid rgb(255, 238, 0);
+  box-shadow: 0 0 25px rgba(235, 201, 7, 0.993);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-box iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(235, 201, 7, 0.993);
+}
+
+/* ========== Music Sections ========== */
+.sectionsection {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27c200;
+  text-shadow: 0 0 40px rgb(247, 222, 1);
+  margin-bottom: 0.5rem;
+}
+
+.texttyy {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+/* ========== Embed Containers ========== */
+.embed-containerrr,
+.embed-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.embed-containerrr iframe {
+  width: 95%;
+  border-radius: 15px;
+  height: 200px;
+  border: none;
+  box-shadow: 0 0 15px rgb(247, 168, 51);
+  transition: transform 0.3s ease;
+}
+
+.embed-containerrr iframe:hover {
+  transform: scale(1.02);
+}
+
+.embed-container iframe {
+  width: 95%;
+  border-radius: 15px;
+  height: 80px;
+  border: none;
+  box-shadow: 0 0 10px rgb(97, 206, 129);
+  transition: transform 0.3s ease;
+}
+
+.embed-container iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(97, 206, 129);
+}
+
+/* ========== Local Audio Section ========== */
+.lonelyy {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: #eee;
+  border: 2px solid #a74250;
+  box-shadow: 0 0 20px #a74250;
+  transition: all 0.3s ease;
+}
+
+.lonelyy:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 20px #a74250;
+}
+
+/* ========== Buttons ========== */
+.btnbtn-info-love,
+.btnbtn,
+.buttonyy {
+  background: linear-gradient(145deg, rgb(170, 93, 106), rgb(255, 254, 254));
+  color: #070606;
+  border: 2px solid rgb(148, 84, 108);
+  border-radius: 15px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 20px rgb(129, 16, 50);
+  display: inline-block;
+  text-align: center;
+}
+
+.btnbtn-info-love:hover,
+.btnbtn:hover,
+.buttonyy:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(129, 16, 50);
+}
+
+/* ========== Audio Player ========== */
+audio {
+  width: 95%;
+  max-width: 500px;
+  border-radius: 50px;
+  background: rgb(161, 79, 79);
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+  .player-card {
+    width: 95%;
+    padding: 1rem;
+  }
+  .textyyy { font-size: 1.8rem; }
+  .video-box iframe { height: 160px; }
+  .embed-container iframe,
+  .embed-containerrr iframe { width: 95%; height: auto; }
+  audio { width: 95%; }
+  .btnbtn-info-love,
+  .btnbtn,
+  .buttonyy { width: 90%; font-size: 1rem; padding: 10px 15px; }
+}
+
+@media (max-width: 480px) {
+  .textyyy { font-size: 1.5rem; }
+  .video-box iframe { height: 140px; }
+  audio { width: 100%; }
+  .btnbtn-info-love,
+  .btnbtn,
+  .buttonyy { width: 100%; font-size: 0.95rem; padding: 12px; }
+}
+
+
+
