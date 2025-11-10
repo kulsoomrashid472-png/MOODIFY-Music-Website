@@ -1,0 +1,282 @@
+/* =============================== */
+/* 🌆 Background Image Section */
+/* =============================== */
+.HappyTheme {
+  background-image: url("happymoodbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.8) blur(3px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* =============================== */
+/* 🌈 Player Card */
+/* =============================== */
+.player-card {
+  max-width: 500px;
+  width: 60%;
+  background-image: url("happycard.jpg");
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(175, 45, 99);
+  border-radius: 20px;
+  box-shadow: 0 0 30px goldenrod;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================== */
+/* 🖋 Typography */
+/* =============================== */
+.textyyy {
+  font-family: cursive;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #e9095f;
+  text-shadow: 0 0 5px rgb(19, 8, 8);
+}
+
+.textyy {
+  font-family: cursive;
+  font-size: 1rem;
+  color: #b30631;
+  margin-bottom: 2rem;
+}
+
+.headingggg {
+  font-family: cursive;
+  color: rgb(8, 114, 212);
+  text-shadow: 0 0 10px rgb(185, 11, 238);
+  font-weight: 700;
+}
+
+/* =============================== */
+/* 🎬 YouTube Grid */
+/* =============================== */
+.videogrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 160px;
+  border-radius: 12px;
+  border: 2px solid rgb(160, 1, 165);
+  box-shadow: 0 0 25px rgba(208, 5, 235, 0.993);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.video-wrap iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(208, 5, 235, 0.993);
+}
+
+/* =============================== */
+/* 🎵 Music Sections */
+/* =============================== */
+.sectionsection {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #35ce0f;
+  font-family: cursive;
+  text-shadow: 0 0 40px rgb(255, 255, 254);
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.embed-containerrr,
+.embed-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.embed-containerrr iframe {
+  width: 90%;
+  border-radius: 15px;
+  border: 1px solid orange;
+  height: 160px;
+  box-shadow: 0 0 15px rgb(233, 140, 1);
+  transition: transform 0.3s ease;
+
+}
+
+.embed-containerrr iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgb(247, 168, 51);
+}
+
+.embed-container iframe {
+  width: 90%;
+  border-radius: 15px;
+  height: 80px;
+  border: none;
+  box-shadow: 0 0 10px rgb(97, 206, 129);
+  transition: transform 0.3s ease;
+}
+
+.embed-container iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(97, 206, 129);
+}
+
+/* =============================== */
+/* 🎧 Local Audio Section */
+/* =============================== */
+.lonelyy {
+  margin-top: 1rem;
+  height: 250px;
+  padding: 1.5rem;
+  color: #eee;
+  border: 2px solid #a74250;
+  box-shadow: 0 0 20px #a74250;
+  background-image: url("playcard.jpg");
+  transition: all 0.3s ease;
+}
+
+.lonelyy:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #a74250;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-family: cursive;
+  font-weight: 700;
+  color: #b30631;
+  text-shadow: 0 0 39px rgb(121, 1, 145);
+}
+
+/* =============================== */
+/* 🔘 Buttons */
+/* =============================== */
+.btnbtn-info-love,
+.btnbtn {
+  background: linear-gradient(145deg, rgb(175, 102, 114), rgb(255, 254, 254));
+  color: #920232;
+  border: 2px solid rgb(148, 84, 108);
+  border-radius: 15px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 20px rgb(129, 16, 50);
+}
+
+.btnbtn-info-love:hover,
+.btnbtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgb(129, 16, 50);
+}
+
+.buttonyy {
+  background-color: transparent;
+  border: 2px solid rgb(156, 57, 82);
+  box-shadow: 0 0 15px #920232;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: #740231;
+  font-weight: 600;
+  font-family: cursive;
+  transition: all 0.3s ease;
+}
+
+.buttonyy:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #8d025f;
+}
+
+/* =============================== */
+/* 🔲 Layout for Button Group */
+/* =============================== */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* =============================== */
+/* 🎚 Audio Player */
+/* =============================== */
+audio {
+  border-radius: 10px;
+  background: rgb(161, 79, 79);
+  border-radius: 50px;
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* =============================== */
+/* 📱 Responsive Adjustments */
+/* =============================== */
+@media (max-width: 768px) {
+  .player-card {
+    width: 90%;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btnbtn-info-love,
+  .buttonyy {
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .textyyy {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnbtn-info-love,
+  .buttonyy {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .embed-containerrr iframe,
+  .embed-container iframe {
+    width: 100%;
+  }
+
+  .textyyy {
+    font-size: 1.6rem;
+  }
+}
+
+/* =============================== */
+/* 🔊 Sound Heading */
+/* =============================== */
+.soundyheading {
+  color: rgb(209, 65, 8);
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
