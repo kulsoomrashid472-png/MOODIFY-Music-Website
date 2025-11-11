@@ -225,12 +225,13 @@ audio::-webkit-media-controls-panel {
   .textyyy { font-size: 1.5rem; }
   .video-box iframe { height: 140px; }
   audio { width: 100%; }
-  .btnbtn-info-love{ width: 40%; font-size: 0.95rem; padding: 12px; height: 50px;}
+  .btnbtn-info-love{ width: 40%; font-size: 0.85rem; padding: 12px; height: 50px;}
                           }
 
   .btnbtn,
-  .buttonyy { width: 50%; font-size: 0.95rem; padding: 12px; height: 50px;}
+  .buttonyy { width: 50%; font-size: 0.85rem; padding: 12px; height: 50px;}
 }
+
 
 
 
