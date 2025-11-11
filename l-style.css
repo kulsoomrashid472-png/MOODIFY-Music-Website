@@ -279,6 +279,7 @@ body {
 /* Velvet Playlist */
 .velvet {
     border: 3px solid #b30f40;
+    background-color: #f4c2c2;
     box-shadow: 0 0 25px #6a1b9a;
     border-radius: 20px;
     width: 100%;
@@ -400,7 +401,7 @@ button {
     /* ------------------------------ */
 
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -479,9 +480,10 @@ button:active {
     }
     button {
         font-size: 0.7rem;   /* Readable font */
-        padding: 5px 10px;   /* Comfortable tap area */
-        min-width: 45px;     /* Slightly bigger */
+        padding: 5px 0;   /* Comfortable tap area */
+        min-width: 40px;     /* Slightly bigger */
         height: auto;
+        width: 45px;
         border-radius: 5px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
     }
@@ -599,6 +601,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
