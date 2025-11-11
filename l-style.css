@@ -1,3 +1,4 @@
+
 /* ================================================= */
 /* 1. Global & Theme Styles */
 /* ================================================= */
@@ -222,11 +223,59 @@ body {
     text-align: center;
     margin: 30px auto;
 }
-
+/* ================================================= */
+/* 🎵 SoundCloud Player Styling */
+/* ================================================= */
 #soundcloud-player {
     width: 100%;
+    height: 180px; /* Default desktop height */
     border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
 }
+
+/* Add hover animation for desktop users */
+#soundcloud-player:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
+}
+
+/* ================================================= */
+/* 📱 Responsive Adjustments */
+/* ================================================= */
+
+/* Tablet (1024px and below) */
+@media (max-width: 1024px) {
+    #soundcloud-player {
+        height: 160px;
+        border-radius: 18px;
+    }
+}
+
+/* Mobile Landscape (768px and below) */
+@media (max-width: 768px) {
+    #soundcloud-player {
+        height: 150px;
+        border-radius: 15px;
+        box-shadow: 0 0 18px rgba(255, 182, 193, 0.5);
+    }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+    #soundcloud-player {
+        height: 140px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(255, 182, 193, 0.4);
+    }
+
+    /* Remove hover scale on touch devices */
+    #soundcloud-player:hover {
+        transform: none;
+    }
+}
+
 
 /* Velvet Playlist */
 .velvet {
@@ -284,7 +333,39 @@ body {
     color: white;
     box-shadow: 0 0 30px #b41880;
 }
+/* ================================================= */
+/* 📱 Responsive Adjustments */
+/* ================================================= */
 
+/* Tablets */
+@media (max-width: 1024px) {
+    .btn-info-love {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+        box-shadow: 0 0 25px #b41880;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .btn-info-love {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+        box-shadow: 0 0 20px #b41880;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .btn-info-love {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+        box-shadow: 0 0 15px #b41880;
+    }
+}
+/* ================================================= */
+/* 💫 Universal Button Styling */
+/* ================================================= */
 button {
     background: #ff5500;
     border: 2px solid gold;
@@ -293,15 +374,60 @@ button {
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: 400;
+    transition: all 0.3s ease;
+    font-weight: 500;
     height: 35px;
+    font-size: 1rem;
 }
 
+/* Hover effect */
 button:hover {
     background: #e64400;
     box-shadow: 0 0 30px gold;
+    transform: translateY(-2px);
 }
+
+/* Focus & Active states */
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 20px #ffea00;
+}
+
+/* ================================================= */
+/* 🧩 Responsive Design */
+/* ================================================= */
+@media (max-width: 1024px) {
+    button {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 0.9rem;
+        padding: 7px 12px;
+        height: 32px;
+        box-shadow: 0 0 18px #f5b802;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        height: 27px;
+        border-radius: 6px;
+        box-shadow: 0 0 15px #f5b802;
+    }
+
+    button:hover {
+        transform: none; /* touch devices ke liye */
+        box-shadow: 0 0 20px gold;
+    }
+}
+
 
 /* ================================================= */
 /* 5. Back to Home Button */
@@ -381,9 +507,8 @@ button:hover {
     .title { font-size: 1.2rem; }
     .video-heading { font-size: 1.2rem; }
     .spotify-card iframe { height: 120px; }
-    .btnbtn { width: 90%; max-width: 400px; }
+    .btnbtn { width: 90%; max-width: 400px; height:40px}
     .music-track-card { padding: 10px; }
-    .soundcloud-player { height: 120px;}
     .track-heading, .heading { font-size: 1rem; }
 }
 
@@ -411,6 +536,8 @@ button:hover {
 }
 
 
-
-
-
+ 
+  
+  
+    
+ 
