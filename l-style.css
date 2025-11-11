@@ -420,7 +420,7 @@ button:active {
         height: 27px;
         border-radius: 6px;
         box-shadow: 0 0 15px #f5b802;
-         width: 60%;
+         width: 40%;
     }
 
     button:hover {
@@ -535,4 +535,5 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
