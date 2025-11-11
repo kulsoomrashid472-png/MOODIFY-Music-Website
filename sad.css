@@ -61,8 +61,8 @@
 .heading {
   font-size: 2rem;
   font-weight: 500;
-  color: #a74250;
-  text-shadow: 0 0 10px black;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgb(143, 26, 90);
 }
 .headingggg{ color: rgb(255, 17, 17); text-shadow: 0 0 10px rgb(177, 174, 167);
  font-size: 2rem;
@@ -153,7 +153,9 @@
 /* ========== Local Audio Section ========== */
 .lonelyy {
   margin-top: 2rem;
-  background: rgba(255, 255, 255, 0.08);
+  background-image: url(s-playercard.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
   padding: 1.5rem;
   color: #eee;
@@ -172,7 +174,7 @@
 .btnbtn,
 .buttonyy {
   background: linear-gradient(145deg, rgb(170, 93, 106), rgb(255, 254, 254));
-  color: #070606;
+  color: #38001c;
   border: 2px solid rgb(148, 84, 108);
   border-radius: 15px;
   padding: 0.5rem 1.2rem;
@@ -182,6 +184,7 @@
   box-shadow: 0 0px 20px rgb(129, 16, 50);
   display: inline-block;
   text-align: center;
+  height:32px;
 }
 
 .btnbtn-info-love:hover,
@@ -217,7 +220,7 @@ audio::-webkit-media-controls-panel {
   audio { width: 95%; }
   .btnbtn-info-love,
   .btnbtn,
-  .buttonyy { width: 90%; font-size: 1rem; padding: 10px 15px; }
+  .buttonyy { width: 40%; font-size: 0.80rem; padding: 10px 15px; }
 }
 
 @media (max-width: 480px) {  .embed-container iframe 
@@ -225,12 +228,13 @@ audio::-webkit-media-controls-panel {
   .textyyy { font-size: 1.5rem; }
   .video-box iframe { height: 140px; }
   audio { width: 100%; }
-  .btnbtn-info-love{ width: 40%; font-size: 0.85rem; padding: 12px; height: 50px;}
+  .btnbtn-info-love{ width: 40%; font-size: 0.70rem; padding: 12px; height: 50px;}
                           }
 
   .btnbtn,
-  .buttonyy { width: 50%; font-size: 0.85rem; padding: 12px; height: 50px;}
+  .buttonyy { width: 40%; font-size: 0.70rem; padding: 12px; height: 50px;}
 }
+
 
 
 
