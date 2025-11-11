@@ -360,6 +360,7 @@ body {
         font-size: 0.65rem;
         padding: 4px 8px;
         box-shadow: 0 0 15px #b41880;
+         width: 60%;
     }
 }
 /* ================================================= */
@@ -419,6 +420,7 @@ button:active {
         height: 27px;
         border-radius: 6px;
         box-shadow: 0 0 15px #f5b802;
+         width: 60%;
     }
 
     button:hover {
@@ -533,3 +535,4 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
