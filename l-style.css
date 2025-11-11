@@ -279,11 +279,13 @@ body {
 /* Velvet Playlist */
 .velvet {
     border: 3px solid #b30f40;
-    background-color: #f4c2c2;
+   background-image: url(l-cardcard.jpg);
+      background-position:center ;
+    background-size: cover;
     box-shadow: 0 0 25px #6a1b9a;
     border-radius: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 15px;
     text-align: center;
     margin: 30px auto;
@@ -300,9 +302,9 @@ body {
 }
 
 .heading {
-    color: #b30f40;
+    color: #5a0553;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 2px;
     text-shadow: 0 0 5px rgb(235, 145, 145);
     letter-spacing: 0.5px;
@@ -401,12 +403,12 @@ button {
     /* ------------------------------ */
 
     padding: 8px 16px;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 500;
-    height: auto;
-    font-size: 1rem;
+    font-weight: 400;
+    height: 28px;
+    font-size: 0.75rem;
 }
 
 /* Hover effect */
@@ -479,12 +481,12 @@ button:active {
         gap: 5px;            /* Thoda gap */
     }
     button {
-        font-size: 0.7rem;   /* Readable font */
-        padding: 5px 0;   /* Comfortable tap area */
+        font-size: 0.50rem;   /* Readable font */
+        padding: 5px 8px;   /* Comfortable tap area */
         min-width: 40px;     /* Slightly bigger */
-        height: auto;
-        width: 45px;
-        border-radius: 5px;
+        height: 24px;
+        width: 60px;
+        border-radius: 10px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
     }
 } 
@@ -601,6 +603,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
