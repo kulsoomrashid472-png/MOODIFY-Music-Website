@@ -404,7 +404,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    height: 35px;
+    height: auto;
     font-size: 1rem;
 }
 
@@ -478,7 +478,7 @@ button:active {
     button {
         font-size: 0.3rem; /* Font size aur chhota kiya */
         padding: 3px 6px; /* Padding kam ki */
-        line-height: 1;
+        height: auto;
         min-width: 60px; /* Minimum width kam ki */
         border-radius: 5px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
@@ -597,6 +597,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
