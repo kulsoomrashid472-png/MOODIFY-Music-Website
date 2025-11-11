@@ -214,7 +214,11 @@ body {
 }
 
 .cardcardcard {
-    border: 4px solid orangered;
+
+     background-image: url(l-soundy.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid orangered;
     box-shadow: 0 0 25px #fdd701;
     border-radius: 20px;
     width: 100%;
@@ -606,6 +610,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
