@@ -480,7 +480,7 @@ button:active {
     button {
         font-size: 0.7rem;   /* Readable font */
         padding: 5px 10px;   /* Comfortable tap area */
-        min-width: 70px;     /* Slightly bigger */
+        min-width: 45px;     /* Slightly bigger */
         height: auto;
         border-radius: 5px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
@@ -599,6 +599,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
