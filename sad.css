@@ -154,11 +154,11 @@
 .lonelyy {
   margin-top: 2rem;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 1.5rem;
   color: #eee;
-  border: 2px solid #a74250;
-  box-shadow: 0 0 20px #a74250;
+  border: 3px solid #a74250;
+  box-shadow: 0 0 30px #a74250;
   transition: all 0.3s ease;
 }
 
@@ -227,8 +227,9 @@ audio::-webkit-media-controls-panel {
   audio { width: 100%; }
   .btnbtn-info-love,
   .btnbtn,
-  .buttonyy { width: 80%; font-size: 0.95rem; padding: 12px; height: 40px}
+  .buttonyy { width: 60%; font-size: 0.95rem; padding: 12px; height: 30px}
 }
+
 
 
 
