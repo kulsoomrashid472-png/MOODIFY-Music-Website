@@ -168,6 +168,7 @@ body {
     max-width: 600px;
     box-shadow: 0 4px 15px rgba(2, 199, 71, 0.945);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height:146px;
 }
 
 .spotify-card:hover {
@@ -180,6 +181,7 @@ body {
     height: 152px;
     border-radius: 12px;
     border: none;
+    height:146px;
 }
 
 /* ================================================= */
@@ -456,10 +458,11 @@ button:active {
         font-size: 0.55rem;
         padding: 6px 10px;
         height: 26px; 
-        border-radius: 6px;
+        border-radius: 15px;
         box-shadow: 0 0 10px rgba(245, 184, 2, 0.6);
         flex: 1; 
         transform: none; /* touch devices */
+        min-width:50px;
     }
 
     button:hover {
@@ -603,6 +606,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
