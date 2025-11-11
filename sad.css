@@ -227,8 +227,9 @@ audio::-webkit-media-controls-panel {
   audio { width: 100%; }
   .btnbtn-info-love,
   .btnbtn,
-  .buttonyy { width: 60%; font-size: 0.95rem; padding: 12px; height: 40px}
+  .buttonyy { width: 50%; font-size: 0.95rem; padding: 12px; height: 30px}
 }
+
 
 
 
