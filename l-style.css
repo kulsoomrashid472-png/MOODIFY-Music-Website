@@ -278,6 +278,7 @@ body {
 
 /* Velvet Playlist */
 .velvet {
+    border: 3px solid #b30f40;
     box-shadow: 0 0 25px #6a1b9a;
     border-radius: 20px;
     width: 100%;
@@ -475,9 +476,9 @@ button:active {
         gap: 5px; /* Gap ko aur kam kiya */
     }
     button {
-        font-size: 0.30rem; /* Font size aur chhota kiya */
+        font-size: 0.26rem; /* Font size aur chhota kiya */
         padding: 5px 8px; /* Padding kam ki */
-        height: 24px; /* Height kam ki */
+        height: 22px; /* Height kam ki */
         min-width: 60px; /* Minimum width kam ki */
         border-radius: 5px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
@@ -596,6 +597,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
