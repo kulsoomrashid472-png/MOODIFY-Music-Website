@@ -2,34 +2,34 @@
 /* 🌆 Background Image Section */
 /* =============================== */
 .HappyTheme {
-  background-image: url("happymoodbg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("happymoodbg.jpg") center/cover no-repeat;
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  backdrop-filter: brightness(0.8) blur(3px);
-  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: brightness(0.9) blur(3px);
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 /* =============================== */
 /* 🌈 Player Card */
 /* =============================== */
 .player-card {
+  width: 100%;
   max-width: 500px;
-  width: 60%;
-  background-image: url("happycard.jpg");
-  backdrop-filter: blur(10px);
+  background: url("happycard.jpg") center/cover no-repeat;
   border: 2px solid rgb(175, 45, 99);
   border-radius: 20px;
   box-shadow: 0 0 30px goldenrod;
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
   animation: fadeIn 1s ease-in;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -44,6 +44,7 @@
   font-weight: 700;
   color: #e9095f;
   text-shadow: 0 0 5px rgb(19, 8, 8);
+  margin-bottom: 1rem;
 }
 
 .textyy {
@@ -67,22 +68,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
+  width: 100%;
 }
 
 .video-wrap iframe {
   width: 100%;
-  max-width: 400px;
-  height: 160px;
+  height: 180px;
   border-radius: 12px;
   border: 2px solid rgb(160, 1, 165);
-  box-shadow: 0 0 25px rgba(208, 5, 235, 0.993);
+  box-shadow: 0 0 25px rgba(208, 5, 235, 0.9);
   transition: transform 0.3s, box-shadow 0.3s;
-
 }
-
 .video-wrap iframe:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(208, 5, 235, 0.993);
+  box-shadow: 0 0 20px rgba(208, 5, 235, 0.8);
 }
 
 /* =============================== */
@@ -93,9 +92,8 @@
   font-weight: 700;
   color: #35ce0f;
   font-family: cursive;
-  text-shadow: 0 0 40px rgb(255, 255, 254);
-  margin-bottom: 0.5rem;
-  margin-top: 2rem;
+  text-shadow: 0 0 40px #fff;
+  margin: 2rem 0 0.5rem;
 }
 
 .embed-containerrr,
@@ -103,19 +101,19 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
+  width: 100%;
 }
 
 .embed-containerrr iframe {
   width: 90%;
+  max-width: 500px;
+  height: 160px;
   border-radius: 15px;
   border: 1px solid orange;
-  height: 160px;
   box-shadow: 0 0 15px rgb(233, 140, 1);
   transition: transform 0.3s ease;
-
 }
-
 .embed-containerrr iframe:hover {
   transform: scale(1.02);
   box-shadow: 0 0 15px rgb(247, 168, 51);
@@ -123,13 +121,13 @@
 
 .embed-container iframe {
   width: 90%;
-  border-radius: 15px;
+  max-width: 500px;
   height: 80px;
+  border-radius: 15px;
   border: none;
   box-shadow: 0 0 10px rgb(97, 206, 129);
   transition: transform 0.3s ease;
 }
-
 .embed-container iframe:hover {
   transform: scale(1.02);
   box-shadow: 0 0 10px rgb(97, 206, 129);
@@ -140,15 +138,14 @@
 /* =============================== */
 .lonelyy {
   margin-top: 1rem;
-  height: 250px;
   padding: 1.5rem;
   color: #eee;
   border: 2px solid #a74250;
   box-shadow: 0 0 20px #a74250;
-  background-image: url("playcard.jpg");
+  background: url("playcard.jpg") center/cover no-repeat;
   transition: all 0.3s ease;
+  border-radius: 20px;
 }
-
 .lonelyy:hover {
   transform: scale(1.02);
   box-shadow: 0 0 25px #a74250;
@@ -166,45 +163,32 @@
 /* 🔘 Buttons */
 /* =============================== */
 .btnbtn-info-love,
-.btnbtn {
+.btnbtn,
+.buttonyy {
   background: linear-gradient(145deg, rgb(175, 102, 114), rgb(255, 254, 254));
   color: #920232;
   border: 2px solid rgb(148, 84, 108);
   border-radius: 15px;
-  padding: 0.5rem 1.2rem;
-  font-size: 0.9rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   font-family: cursive;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0px 20px rgb(129, 16, 50);
+  box-shadow: 0 0px 20px rgba(129, 16, 50, 0.6);
+  display: inline-block;
+  text-align: center;
 }
-
 .btnbtn-info-love:hover,
-.btnbtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgb(129, 16, 50);
-}
-
-.buttonyy {
-  background-color: transparent;
-  border: 2px solid rgb(156, 57, 82);
-  box-shadow: 0 0 15px #920232;
-  border-radius: 10px;
-  margin-top: 1rem;
-  color: #740231;
-  font-weight: 600;
-  font-family: cursive;
-  transition: all 0.3s ease;
-}
-
+.btnbtn:hover,
 .buttonyy:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 15px #8d025f;
+  background: linear-gradient(145deg, rgb(255, 254, 254), rgb(175, 102, 114));
+  transform: scale(1.05);
+  box-shadow: 0 0px 25px rgba(129, 16, 50, 0.8);
 }
 
 /* =============================== */
-/* 🔲 Layout for Button Group */
+/* 🔲 Button Group */
 /* =============================== */
 .d-flex {
   display: flex;
@@ -212,18 +196,17 @@
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 /* =============================== */
 /* 🎚 Audio Player */
 /* =============================== */
 audio {
-  border-radius: 10px;
-  background: rgb(161, 79, 79);
   border-radius: 50px;
+  background: rgba(161, 79, 79, 0.3);
   outline: none;
 }
-
 audio::-webkit-media-controls-panel {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -231,45 +214,37 @@ audio::-webkit-media-controls-panel {
 /* =============================== */
 /* 📱 Responsive Adjustments */
 /* =============================== */
+
+/* 📱 Tablets (≤ 768px) */
 @media (max-width: 768px) {
-  .player-card {
-    width: 90%;
-  }
-
-  .d-flex {
-    flex-direction: column;
-    gap: 12px;
-  }
-
+  .textyyy { font-size: 1.9rem; }
+  .player-card { width: 90%; }
+  .d-flex { flex-direction: column; gap: 12px; }
   .btnbtn-info-love,
-  .buttonyy {
-    width: 90%;
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
-
-  .textyyy {
-    font-size: 1.9rem;
-  }
+  .buttonyy { width: 90%; font-size: 0.95rem; padding: 10px 15px; }
+  .embed-containerrr iframe,
+  .embed-container iframe { height: 140px; }
 }
 
+/* 📱 Mobiles (≤ 480px) */
 @media (max-width: 480px) {
+  .HappyTheme { padding: 1.5rem 0.5rem; }
+  .textyyy { font-size: 1.6rem; }
+  .textyy { font-size: 0.9rem; }
+  .player-card { width: 95%; padding: 1rem; }
   .btnbtn-info-love,
-  .buttonyy {
-    width: 40%;
-    height:40px
-    font-size: 1rem;
-    padding: 4px;
-  }
-
+  .buttonyy { width: 100%; font-size: 0.85rem; padding: 0.8rem 1rem;height:43px }
   .embed-containerrr iframe,
-  .embed-container iframe {
-    width: 100%;
-  }
+  .embed-container iframe { width: 100%; height: 120px; }
+  .videogrid { gap: 0.8rem; }
+}
 
-  .textyyy {
-    font-size: 1.6rem;
-  }
+/* 📱 Extra Small Devices (≤ 360px) */
+@media (max-width: 360px) {
+  .textyyy { font-size: 1.4rem; }
+  .heading { font-size: 1.8rem; }
+  .btnbtn-info-love,
+  .buttonyy { font-size: 0.75rem; padding: 0.7rem 0.9rem; height:43px }
 }
 
 /* =============================== */
@@ -280,6 +255,5 @@ audio::-webkit-media-controls-panel {
   font-family: cursive;
   font-weight: 700;
   font-size: 1.5rem;
+  text-shadow: 0 0 10px rgba(209, 65, 8, 0.6);
 }
-
-
