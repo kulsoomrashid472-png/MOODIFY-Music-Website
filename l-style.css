@@ -377,10 +377,10 @@ button {display:flex;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 400;
+    font-sixe:0.9rem;
     height: 35px;
     font-size: 1rem;
-gap:10px;
+gap:4px;
         min-width:60px
 }
 
@@ -539,6 +539,7 @@ min-width:50px
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
