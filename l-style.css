@@ -431,17 +431,17 @@ button:active {
 /* ================================================= */
 @media (max-width: 1024px) {
     button {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         padding: 8px 14px;
-        height: 34px;
+        height: 28px;
     }
 }
 
 @media (max-width: 768px) {
     button {
-        font-size: 0.9rem;
+        font-size: 0.65rem;
         padding: 7px 12px;
-        height: 32px;
+        height: 26px;
         /* Adjusted shadow for smaller screens */
         box-shadow: 0 0 10px rgba(245, 184, 2, 0.6); 
     }
@@ -453,9 +453,9 @@ button:active {
         gap: 8px;
     }
     button {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 6px 10px;
-        height: 30px; 
+        height: 26px; 
         border-radius: 6px;
         box-shadow: 0 0 10px rgba(245, 184, 2, 0.6);
         flex: 1; 
@@ -603,6 +603,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
