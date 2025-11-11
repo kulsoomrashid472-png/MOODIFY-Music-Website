@@ -433,7 +433,7 @@ button:active {
     button {
         font-size: 0.75rem;
         padding: 8px 14px;
-        height: 28px;
+        height: 26px;
     }
 }
 
@@ -441,7 +441,7 @@ button:active {
     button {
         font-size: 0.60rem;
         padding: 7px 12px;
-        height: 26px;
+        height: 24px;
         /* Adjusted shadow for smaller screens */
         box-shadow: 0 0 10px rgba(245, 184, 2, 0.6); 
     }
@@ -603,6 +603,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
