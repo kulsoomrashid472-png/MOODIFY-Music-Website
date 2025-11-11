@@ -220,7 +220,7 @@ audio::-webkit-media-controls-panel {
   .buttonyy { width: 90%; font-size: 1rem; padding: 10px 15px; }
 }
 
-@media (max-width: 480px) {  .embed-container iframe,
+@media (max-width: 480px) {  .embed-container
    { width: 95%; height: 100px; }
   .textyyy { font-size: 1.5rem; }
   .video-box iframe { height: 140px; }
@@ -229,6 +229,7 @@ audio::-webkit-media-controls-panel {
   .btnbtn,
   .buttonyy { width: 100%; font-size: 0.95rem; padding: 12px; }
 }
+
 
 
 
