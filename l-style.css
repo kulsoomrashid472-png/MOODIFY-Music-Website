@@ -285,6 +285,7 @@ body {
     padding: 15px;
     text-align: center;
     margin: 30px auto;
+    margin-top: 50px
 }
 
 .track-heading {
@@ -595,6 +596,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
