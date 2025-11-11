@@ -473,17 +473,19 @@ button:active {
 
 @media (max-width: 360px) {
     .button-wrapper {
-        gap: 5px; /* Gap ko aur kam kiya */
+        display: flex;       /* Side-by-side maintain */
+        justify-content: space-between;
+        gap: 5px;            /* Thoda gap */
     }
     button {
-        font-size: 0.3rem; /* Font size aur chhota kiya */
-        padding: 3px 6px; /* Padding kam ki */
+        font-size: 0.7rem;   /* Readable font */
+        padding: 5px 10px;   /* Comfortable tap area */
+        min-width: 70px;     /* Slightly bigger */
         height: auto;
-        min-width: 60px; /* Minimum width kam ki */
         border-radius: 5px;
         box-shadow: 0 0 8px rgba(245, 184, 2, 0.6);
     }
-}
+} 
 
 
 
@@ -597,6 +599,7 @@ button:active {
     color: #5a0553;
     font-weight: 300;
 }
+
 
 
 
