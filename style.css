@@ -34,13 +34,14 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .mood-emoji { font-size: 6vw; }
-}
-
-@media (max-width: 480px) {
     .mood-emoji { font-size: 8vw; }
 }
 
+@media (max-width: 480px) {
+    .mood-emoji { font-size: 10vw; }
+}
+
   
   
   
+
