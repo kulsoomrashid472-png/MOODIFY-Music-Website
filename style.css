@@ -34,15 +34,17 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .mood-emoji { font-size: 8vw; }
+    .mood-emoji { font-size: 2.5 rem; 
+                margin:6px}
 }
 
 @media (max-width: 480px) {
-    .mood-emoji { font-size: 12vw; }
+    .mood-emoji { font-size: 2rem; }
 }
 
   
   
   
+
 
 
