@@ -14,7 +14,7 @@
 }
 
 /* Emoji container */
-.mood-emojis {
+.mood-emoji {
     display: flex;
     gap: 20px; /* spacing between emojis */
 }
@@ -45,3 +45,4 @@
         font-size: 40px;  /* small mobile */
     }
 }
+
