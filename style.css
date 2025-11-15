@@ -8,8 +8,9 @@
     background-repeat: no-repeat;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-end;     /* vertical bottom */
+    padding-bottom: 50px;      /* distance from bottom, adjust as needed */
 
     gap: 30px; /* spacing between emojis */
 }
@@ -27,20 +28,18 @@
     filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
 }
 
-/* ---------------------------
-   Responsive Sizing
-----------------------------*/
+/* Responsive Sizing */
 
 /* Tablets & large phones (<= 768px) */
 @media (max-width: 768px) {
     .mood-emoji {
-        font-size: 70px !important;  /* perfect size */
+        font-size: 70px !important;
     }
 }
 
 /* Small phones (<= 400px) */
 @media (max-width: 400px) {
     .mood-emoji {
-        font-size: 50px !important; /* perfect size for small screens */
+        font-size: 50px !important;
     }
 }
