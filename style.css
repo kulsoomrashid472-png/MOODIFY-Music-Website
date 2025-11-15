@@ -21,8 +21,8 @@
 
 /* Individual emojis */
 .mood-emoji {
-    font-size: 4vw;
-    text-decoration: none; /* remove underline */
+    font-size: 4vw; /* responsive for large screens */
+    text-decoration: none;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -34,18 +34,14 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .mood-emoji { font-size: 56px; 
-                margin:6px}
+    .mood-emoji {
+        font-size: 56px;  /* tablet / large mobile */
+        margin: 6px;
+    }
 }
 
-@media (max-width: 480px) {
-    .mood-emoji { font-size: 40px; }
+@media (max-width: 400px) {   /* ✔ 480 ko 400 px karna best */
+    .mood-emoji {
+        font-size: 40px;  /* small mobile */
+    }
 }
-
-  
-  
-  
-
-
-
-
